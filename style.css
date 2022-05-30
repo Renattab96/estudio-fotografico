@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+HTML{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}/* caractersisticas hererdadas por la anterior caracteristica */
+header{
+    background-image: url('./assets/img/principal.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+}
+div.overlay{
+    background-color: rgba(0,0,0,40%);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+nav{
+    background-color: #141a18;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding :1rem 2rem;
+    z-index: 2;
+}
+.logo{
+    font-family: 'Open Sans'sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 2rem;
+    padding-top:0.5 rem  0.8rem;
+    border-radius: 2px;
+}
+nav ul li:hover{
+background-color: rgba(255,255,255,10%);
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+header div{
+    /*background-color: tomato;*/
+    width: 40%;
+}
+header div h2,
+header div h3 {
+    position: relative;
+    top: 11rem;
+    color:white;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    font-size: 5.5rem;
+    text-transform: uppercase;/*todo en mayuscula*/
+    padding-left: 2rem;
+}
+header div h3{
+    background-color: #141a18;
+    font-size: 1.9rem;
+    padding: 0.5rem 0.5rem  0.5rem 2rem; /* margenes se manejan como las manecillas del reloj*/
+}
+section#Nosotros{
+    padding: 10rem;
+}
+div.container{
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: red;*/
+}
+h1{
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+section#Nosotros p{
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5rem;
+    line-height: 1.7;/*espaciado entre lineas */
+}
+section.galeria{
+    display: grid;
+    grid-template-columns: 70% 30%; /*alcance de las columnas en pantalla*/
+    grid-template-rows: repeat(3,auto);/*repite que las filas sean automaticas*/
+    gap: 1rem;/*evitar que las imagenes esten todas pegadas*/
+}
+section.galeria h2{
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 3rem;
+    padding: 2rem;
+
+}
+section.galeria figure img{
+    width: 100%;
+}
+section.galeria figure.retrato{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+}
+section.galeria figure.paisaje{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+section.galeria figure.nocturna{
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+section.planes{
+    padding: 5rem;
+}
+section.planes h2{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+div.planes-container{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+}
+div.planes-container div{
+    background-color: #141a18;
+    padding: 3rem;
+    color: white;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 700;
+    width: 40%;
+}
+.plan-basico{
+    height: 90%;
+    position: relative;
+    top: 2.5rem;
+}
+.title-plan{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+div.planes-container div ul {
+    list-style: none;
+    line-height: 2;
+}
+strong{
+    color: #ff3b3b;
+    font-size: 1,2rem;
+}
+.price{
+    text-align:end;
+    font-size: 3rem;
+}
+section#contacto{
+    display: flex;
+    font-family: 'Open Sans' , sans-serif;
+    padding: 4rem ;
+}
+section#contacto div:first-child{
+    padding: 3rem;
+    width: 50%;
+}
+section#contacto div :first-child h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+section#contacto div :first-child p {
+    font-size: 1.2rem;
+}
+section#contacto div:last-child{
+    background-color: #141a18;
+    color: white;
+    font-weight: 700;
+    width: 50%;
+    padding: 2rem;
+}
+input,textarea{
+    padding: 0,3rem;
+    width: 90%;
+    margin: 1rem;
+}
+input[type="submit"]{
+    font-weight: 700;
+    background-color: red;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    width: 30%;
+    margin-left: 60%;
+    transition: all 5s ease;
+}
+input[type="submit"]:hover{
+    background-color: #D41F1F;
+}
+
+footer{
+    background-color: #141a18;
+    color: white;
+    font-weight: 700;
+    font-family: 'Open Sans' , sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding :2rem;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer div.redes-sociales {
+    padding-top: 2rem;
+}
+footer div.redes-sociales a{
+    font-size: 2rem;
+}
+
+footer div.politicas a{
+    display: block;
+}
+footer div.politicas {
+    line-height: 2;
+}

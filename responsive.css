@@ -1,0 +1,67 @@
+@media (max-width: 768px){
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li {
+        margin-right: 0;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+    header div h2{
+        font-size: 3rem;
+        top: 18rem;
+
+    }
+    header div h3{
+        font-size: 1rem;
+        top: 18rem;
+        width: 20rem;
+    }
+    section#Nosotros{
+        padding: 3rem;
+    }
+    section.galeria{
+        display: flex;
+        flex-direction: column;
+    }
+    section.planes{
+        padding: 1rem;
+    }
+    div.planes-container{
+        flex-direction: column;
+    }
+    div.planes-container div{
+        width: 100%;
+    }
+    div.plan-basico{
+        margin-bottom: 5rem;
+    }
+    section.planes h2{
+        text-align: center;
+        font-size: 1,2rem;
+        margin-bottom: 0;
+        margin-top: 2rem;
+    
+    }
+    section#contacto{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    section#contacto div:first-child,
+    section#contacto div:last-child{
+        width: 100%;
+        margin: 0 auto;
+    }
+    section#contacto div :first-child h3,
+    section#contacto div:first-child p {
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+} 
